@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/nav.css">
+    <link rel="stylesheet" href="/stylesheet/login-signup.css">
+
+    <title>Login / SignUp</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+
+</head>
+
+<body>
+
+    <nav class="topnav">
+        <li><a href="/index.html"><img src="/images/logo_name.png" alt="" style="height: 40px; width: 160px"></a></li>
+        <li><a href="#home">Accuracy</a></li>
+        <li><a href="#news">Download</a></li>
+        <li><a class="active" href="/contact.html">Contact Us</a></li>
+        <li class="right"><a href="#about">Login | Create an Account</a></li>
+    </nav>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Create Account</button>
+            </div>
+
+            <div class="company-icon">
+                <img src="/images/logo_name.png" alt="">
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <br><br>
+                <button type="submit" class="submit-btn"><a href="/home.html"> Log In</a></button>
+            </form>
+
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Email Id" required>
+                <p>We recommend login in with the same company email to all the company devices. Each device needs a
+                    license.</p>
+                <!-- <br> -->
+                <input style="width: 48%;" type="password" class="input-field" placeholder="Password" required>
+                <input style="width: 48%;" type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="text" class="input-field" placeholder="First & Last Name" required>
+                <input style="width: 48%;" type="text" class="input-field" placeholder="Company" required>
+                <input style="width: 48%;" type="tel" class="input-field" placeholder="Phone No." required>
+                <input type="checkbox" class="check-box"><span>I accept the Terms of Services</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "75px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "75px";
+            y.style.left = "550px";
+            z.style.left = "0px";
+        }  
+    </script>
+
+
+</body>
+
+</html>
